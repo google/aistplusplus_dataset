@@ -1,0 +1,110 @@
+{
+  "gWA_sBM_cAll_d25_mWA0_ch01": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d25_mWA0_ch01",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d25_mWA0_ch01_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d25_mWA1_ch05": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d25_mWA1_ch05",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d25_mWA1_ch05_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d25_mWA2_ch02": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d25_mWA2_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d25_mWA2_ch02_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d25_mWA2_ch06": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d25_mWA2_ch06",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d25_mWA2_ch06_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d25_mWA3_ch08": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d25_mWA3_ch08",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d25_mWA3_ch08_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d26_mWA0_ch03": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d26_mWA0_ch03",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d26_mWA0_ch03_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d26_mWA4_ch03": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d26_mWA4_ch03",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d26_mWA4_ch03_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d26_mWA4_ch06": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d26_mWA4_ch06",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d26_mWA4_ch06_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d26_mWA5_ch02": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d26_mWA5_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d26_mWA5_ch02_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d27_mWA2_ch10": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d27_mWA2_ch10",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d27_mWA2_ch10_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d27_mWA4_ch04": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d27_mWA4_ch04",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d27_mWA4_ch04_kpt3d.mp4"
+  },
+  "gWA_sBM_cAll_d27_mWA4_ch10": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sBM_cAll_d27_mWA4_ch10",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sBM_cAll_d27_mWA4_ch10_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d25_mWA1_ch02": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d25_mWA1_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d25_mWA1_ch02_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d25_mWA5_ch06": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d25_mWA5_ch06",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d25_mWA5_ch06_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d25_mWA5_ch07": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d25_mWA5_ch07",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d25_mWA5_ch07_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d26_mWA3_ch14": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d26_mWA3_ch14",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d26_mWA3_ch14_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d27_mWA3_ch18": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d27_mWA3_ch18",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d27_mWA3_ch18_kpt3d.mp4"
+  },
+  "gWA_sFM_cAll_d27_mWA5_ch20": {
+    "category_id": "gWA",
+    "category_name": "Waack",
+    "sequence_name": "gWA_sFM_cAll_d27_mWA5_ch20",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gWA_sFM_cAll_d27_mWA5_ch20_kpt3d.mp4"
+  }
+}

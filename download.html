@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <script src="main.js" type="text/javascript"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JM2CPK6QLP');
+
+    function toggle_view(subset) {
+      const menu = document.getElementById("seg_" + subset + "_menu");
+      if (menu.style.display === "none") {
+        document.getElementById("seg_train_menu").style.display = "none";
+        document.getElementById("seg_validation_menu").style.display = "none";
+        document.getElementById("seg_test_menu").style.display = "none";
+
+        document.getElementById("seg_train_button").classList.remove("hovered");
+        document.getElementById("seg_validation_button").classList.remove("hovered");
+        document.getElementById("seg_test_button").classList.remove("hovered");
+
+        document.getElementById("seg_" + subset + "_button").classList.add("hovered");
+        menu.style.display = "block";
+      } else {
+        document.getElementById("seg_" + subset + "_button").classList.remove("hovered");
+        menu.style.display = "none";
+      }
+    }
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>AIST++ Dataset - Download</title>
+</head>
+<body onload="mainDivResize('download')" onresize="mainDivResize()">
+<div class="topnav" id="myTopnav">
+  <a id="100" href="index.html" class="title">AIST++ Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="visualizer/index.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+</div>
+<div class="main" id="main">
+  <div id="download_banner">
+  </div>
+  <div style='max-width: 900px; margin: 0 auto;'>
+    <br>
+
+    Trouble downloading the dataset? <a href="mailto:aistplusplus-external@google.com">Let us know</a>.
+
+    <h3>Download the videos/images/music</h3>
+    If you're interested in downloading the full set of AIST Dance Videos (with music), please visit their
+    <a href='https://aistdancedb.ongaaccel.jp/database_download/' target="_blank">website</a>.
+
+    If you only need to download the subset of AIST Dance Videos that we annotated, we provide a
+    Python script that downloads the videos (with music) from their website.
+    <ol>
+      <li>Download the file <a href="https://github.com/google/aistplusplus_api/blob/main/downloader.py" download="">downloader.py</a>
+        (press <code>Ctrl + S</code>), or directly run:
+        <pre>wget https://raw.githubusercontent.com/google/aistplusplus_api/main/downloader.py</pre>
+      </li>
+      <li>Run the following script:
+        <pre>python downloader.py --download_folder=$DOWNLOAD_FOLDER --num_processes=5</pre>
+        For help, run:
+            <pre>python downloader.py -h</pre>
+      </li>
+      <li>Convert videos to images under <b>exact 60 FPS</b> instead of the raw fps.
+        Our <a href='https://github.com/google/aistplusplus_api/'>Python API code</a>
+        provides a <a href='https://github.com/google/aistplusplus_api/blob/main/aist_plusplus/utils.py#L22'>ffmpeg-based function</a>
+        to do it but you are welcome to use alternative ways.
+      </li>
+    </ol>
+
+    <h3 style="padding-top: 15px;">Download the annotations</h3>
+    <div class="row">
+      <div class="col-12" style="padding:0">
+        <div class="col-3">
+          <a href="https://storage.cloud.google.com/aist_plusplus_public/20121228/motions_only.zip">
+            <button class="button">Motion Data Only (306MB)</button>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="https://storage.cloud.google.com/aist_plusplus_public/20121228/keypoints2d_only.zip">
+            <button class="button">2D Keypoints Only (1.2GB)</button>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="https://storage.cloud.google.com/aist_plusplus_public/20121228/keypoints3d_only.zip">
+            <button class="button">3D Keypoints Only (834MB)</button>
+          </a>
+        </div>
+        <div class="col-3">
+          <a href="https://storage.cloud.google.com/aist_plusplus_public/20121228/cameras_only.zip">
+            <button class="button">Camera Data Only (19KB)</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12" style="padding:0">
+        <div class="col-12">
+          <a href="https://storage.cloud.google.com/aist_plusplus_public/20121228/fullset.zip">
+            <button class="button">Complete Dataset -- All Above + Dataset Splits (2.3GB)</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2><a name="dataformats"></a> Data API</h2>
+<p>We provide the <a href="https://github.com/google/aistplusplus_api/">Python API code</a> for loading AIST++ annotations, as well as visualizing them.
+The API repository also contains reproducible code that we used to construct those annotations,
+including camera parameters estimation, 3D keypoints reconstruction and 3D human motion fitting.</p>
+<h2><a name="dataformats"></a> Data Formats</h2>
+<h3>Sequence Names</h3>
+<p>The annotations in the AIST++ are marked by <em>sequence name</em>. Each sequence name corresponds with a set of multi-view video names in the <a href="https://aistdancedb.ongaaccel.jp/">AIST Dance Video DB</a>.</p>
+<p>For example, <code>gBR_sBM_cAll_d04_mBR0_ch01</code> in our annotations corresponds with <code>gBR_sBM_{c01, ..., c09}_d04_mBR0_ch01</code> in the AIST database.</p>
+<h3>Camera Parameters</h3>
+<p>The camera intrinsic and extrinsic information is stored in two files.</p>
+<ul>
+  <li>Individual environment settings, each with 9 cameras in the environment.
+    (<code>setting_&lt;suffix&gt;.json</code>)</li>
+  <li>Mapping from environment settings to sequence names.
+    (<code>mapping.txt</code>)</li>
+</ul>
+<p>Each camera has the following attributes:</p>
+<ul>
+  <li><code>name</code>: The camera name corresponding to the AIST database.</li>
+  <li><code>size</code>: Canvas resolution. It is [1920, 1080] for all AIST 1080P video.</li>
+  <li><code>matrix</code>: The 3x3 camera intrinsic matrix.*</li>
+  <li><code>rotation</code>: The global rotation vector in Rodrigues format.*</li>
+  <li><code>translation</code>: The global translation vector.*</li>
+  <li><code>distortions</code>: Distortion coefficients.*</li>
+</ul>
+<p>*See <a href="https://docs.opencv.org/master/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d">here</a> for detailed definition.</p>
+<h3>Human Motion Sequence</h3>
+<p>Each <a href="https://smpl.is.tue.mpg.de/">SMPL-format</a> human motion sequence is stored in a <code>.pkl</code> file with the following attributes:</p>
+<ul>
+<li><code>smpl_poses</code>: Sequences of SMPL pose parameters. Array shape is (N, 24, 3).</li>
+<li><code>smpl_scaling</code>: Human body scaling factor. A scalar value for each sequence.</li>
+<li><code>smpl_trans</code>: Motion 3D trajectory. Array shape is (N, 3).</li>
+</ul>
+<h3>3D&amp;2D Keypoints Annotation</h3>
+<p>We provide <a href="https://cocodataset.org/#home">COCO-format</a> keypoints annotation in both 2D and 3D. Each keypoints sequence is stored in a <code>.pkl</code> file with the following attributes:</p>
+<ul>
+<li><code>keypoints3d</code>: Sequences of 3D keypoints reconstructed frame-by-frame. Array shape is (N, 17, 3).</li>
+<li><code>keypoints3d_optim</code>: Sequences of 3D keypoints reconstructed with temporal smoothness and constrains.</li>
+<li><code>keypoints2d</code>: Multi-view frame-by-frame 2D keypoints detection results. Array shape is (9, N, 17, 3). The last dimension is (x, y, confidence).</li>
+</ul>
+<h3><a name="timestamps"></a> Timestamps</h3>
+<p>Our annotations are frame-by-frame under <strong>exact 60 FPS</strong>. Some videos in the <a href="https://aistdancedb.ongaaccel.jp/">AIST Dance Video DB</a> have slightly different FPS. In order to align frames across multi-view videos, we hard-coded <strong>60 FPS</strong> when converting videos into images.</p>
+<h3>Filter List</h3>
+<p>We manually checked our annotations and conducted numerical analysis. A filter list is provided that contains those sequences with poorly reconstructed 3D keypoints and human motion annotations (<code>ignore_list.txt</code>). We recommend excluding those annotations in your research or study.</p>
+
+  </div>
+</div>
+</body>
+</html>

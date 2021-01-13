@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIST++ Dataset - Description</title>
+  </head>
+  <body onload="mainDivResize('factsfigures')" onresize="mainDivResize()">
+    <style>
+      /*************************************
+       The box that contain BibTeX code
+       *************************************/
+      div.noshow { display: none; }
+      div.bibtex {
+        margin-right: 0%;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid silver;
+        padding: 0em 1em;
+        background: #ffffee;
+      }
+      div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+    </style>
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_'+articleid);
+            if (bib) {
+                if(bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
+        }
+      </script>
+    <div class="topnav" id="myTopnav">
+      <a id="100" href="index.html" class="title">AIST++ Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="visualizer/index.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+    </div>
+    <div class="main" id ="main">
+      <div id="factsfigures_banner">
+      </div>
+      <div style='max-width: 900px; margin: 0 auto;'>
+        <h2>Overview of AIST++</h2>
+<div>
+  <video style="width:100%" loop muted controls autoplay>
+    <source src="images/dataset_example.mp4" type="video/mp4">
+  </video>
+  <p style="font-size: 12px"><i>The above video contains music. You can click the video to unmute it.</i></p>
+</div>
+</br>
+<p>The AIST++ Dance Motion Dataset is constructed from the <a href="https://aistdancedb.ongaaccel.jp/">AIST Dance Video DB</a>. With multi-view videos, an elaborate pipeline is designed to estimate the camera parameters, 3D human keypoints and 3D human dance motion sequences:</p>
+<ul>
+<li>It provides 3D human keypoint annotations and camera parameters for 10.1M images, covering 30 different subjects in 9 views. These attributes make it the <em>largest and richest existing dataset with 3D human keypoint annotations</em>.</li>
+<li>It also contains 1,408 sequences of 3D human dance motion, represented as joint rotations along with root trajectories. The dance motions are equally distributed among 10 dance genres with hundreds of choreographies. Motion durations vary from 7.4 sec. to 48.0 sec. All the dance motions have corresponding music.</li>
+</ul>
+<p>With those annotations, AIST++ is designed to support tasks including:</p>
+<ul>
+<li>Multi-view Human Keypoints Estimation.</li>
+<li>Human Motion Prediction/Generation.</li>
+<li>Cross-modal Analysis between Human Motion and Music.
+<br><br></li>
+</ul>
+<h2>Publications</h2>
+<p style="margin-block-end: 7px;">The following paper describes AIST++ dataset in depth: from the data processing to detailed statistics about the data. If you use the AIST++ dataset in your work, please cite this article.</p>
+<table style="border: 0;">
+    <tr>
+      <td width=17% style="border: 0;">
+        <img src="images/paper_teaser.gif">
+      </td>
+      <td width=75% style="border: 0;">
+        <i>Ruilong Li*, Shan Yang*, David Ross, Angjoo Kanazawa.</i><br>
+        Learn to Dance with AIST++: Music Conditioned 3D Dance Generation.<br>
+        In submission, 2020.<br>
+        <a href="https://arxiv.org/abs/TODO" target="_blank">[PDF]</a> <a href="javascript:toggleBibtex('DanceGen')">[BibTeX]</a>
+      </td>
+  </tr>
+</table>
+<div id="bib_DanceGen" class="bibtex noshow">
+<pre>
+@inproceedings{TODO,
+  author    = {TODO},
+  title     = {Learn to Dance with AIST++: Music Conditioned 3D Dance Generation},
+  booktitle = {TODO},
+  year      = {TODO}
+}
+</pre>
+</div>
+<p style="margin-top: 19px; margin-block-end: 7px;">Please also consider citing the original <a href="https://aistdancedb.ongaaccel.jp/">AIST Dance Video Database</a> if you find our dataset useful. (<a href="javascript:toggleBibtex('AIST')">[BibTex]</a>)</p>
+<div id="bib_AIST" class="bibtex noshow">
+<pre>
+@inproceedings{aist-dance-db,
+   author    = {Shuhei Tsuchida and Satoru Fukayama and Masahiro Hamasaki and Masataka Goto}, 
+   title     = {AIST Dance Video Database: Multi-genre, Multi-dancer, and Multi-camera Database for Dance Information Processing}, 
+   booktitle = {Proceedings of the 20th International Society for Music Information Retrieval Conference, {ISMIR} 2019},
+   address   = {Delft, Netherlands},
+   pages     = {501--510},
+   year      = 2019, 
+   month     = nov
+}
+</pre>
+</div>
+<h2>Dataset organization</h2>
+<p>The dataset is split into training/validation/testing sets in different ways serving for different purposes.</p>
+<ul>
+<li>For tasks such as human pose estimation and human motion prediction, we recommend using data splits described in Table 1. Here we split the trainval and testing sets based on different <em>subjects</em>, which also makes sure the human motions in the trainval and testing sets have no overlap. Note training and validation sets share the same group of subjects.</li>
+<li>For tasks dealing with motion and music such as music conditioned motion generation, we recommend using data splits described in Table 2. In the AIST database, the same music and the same choreography are shared by multiple human motion sequences. So we carefully split the dataset to make sure that the music and choreography in the training set does not overlap with that in the testing/validation set. Note validation and testing sets share the same group of music but different choreographies.</li>
+</ul>
+<p align='center'>Table 1: Data Splits based on Subjects.</p>
+<table>
+<thead>
+<tr>
+<th><div style="width:100px"></div></th>
+<th align="right">Train</th>
+<th align="right">Validation</th>
+<th align="right">Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Images</td>
+<td align="right">6,420,059</td>
+<td align="right">508,234</td>
+<td align="right">3,179,722</td>
+</tr>
+<tr>
+<td>Sequences</td>
+<td align="right">868</td>
+<td align="right">70</td>
+<td align="right">470</td>
+</tr>
+<tr>
+<td>Subjects</td>
+<td align="right">20*</td>
+<td align="right">20*</td>
+<td align="right">10</td>
+</tr>
+</tbody>
+</table>
+<p align='center'>Table 2: Data Splits based on Music-Choreography.</p>
+<table>
+<thead>
+<tr>
+<th><div style="width:100px"></div></th>
+<th align="right">Train</th>
+<th align="right">Validation</th>
+<th align="right">Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seconds</td>
+<td align="right">13,963.6</td>
+<td align="right">187.6</td>
+<td align="right">187.6</td>
+</tr>
+<tr>
+<td>Sequences</td>
+<td align="right">980</td>
+<td align="right">20</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Choreographies</td>
+<td align="right">420</td>
+<td align="right">20</td>
+<td align="right">20</td>
+</tr>
+<tr>
+<td>Music</td>
+<td align="right">50</td>
+<td align="right">10*</td>
+<td align="right">10*</td>
+</tr>
+</tbody>
+</table>
+<p>*splits have shared data across this field.</p>
+<h2>Licenses</h2>
+<p>The annotations are licensed by Google LLC under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> license.</p>
+
+      </div>
+    </div>
+  </body>
+</html>

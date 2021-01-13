@@ -1,0 +1,576 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.main .highlight{
+  background: #EEE;
+  border-radius: 2px;
+  overflow-x: auto;
+  padding:10px;
+}
+
+.main code{
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 13px;
+  border: none;
+}
+
+.main p code{
+  font-size: 15px;
+}
+
+.main ul code{
+  font-size: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-4-disabled {width: 33.33%; pointer-events: none; opacity: 0.4;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-6-disabled  {width: 50%; pointer-events: none; opacity: 0.4;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-fifth {width: 20%;}
+.col-sixteenth{width: 6.25%;}
+
+h2{
+  font-weight: 300;
+  padding-top: 30px;
+  color: rgba(150, 27, 40);
+}
+
+h4 {
+  margin-top: 2em;
+}
+
+.main img{
+  max-width: 100%;
+}
+
+.metrics img{
+  max-width: 50%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 7px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #EEE;
+    border: none;
+    color: black;
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.grayed{
+    background-color: #CCC;
+}
+
+.hovered{
+    background-color: rgba(150, 27, 40, 0.9);
+    color: white;
+}
+
+.button:hover {
+    background-color: rgba(150, 27, 40, 0.9);
+    color: white;
+}
+
+.titlecol{
+    min-height: 40px;
+    padding-top: 16px;
+    font-size: 15px;
+}
+
+.topnav {
+  background-color: #0277BD;
+  overflow: hidden;
+  z-index: 2;
+  line-height: 1;
+}
+
+.topnav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav .icon {
+  padding: 12px 14px 13px 14px;
+  color: white;
+  display: none;
+}
+
+.menuitem {
+  float: right;
+  color: white;
+  padding: 14px 14px 13px 14px;
+  font-size: 20px;
+}
+
+.title {
+  float: left;
+  color: white;
+  padding: 12px 14px 12px 14px;
+  font-size: 24px;
+}
+
+#challenge_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/challenge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#download_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/download.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#extended_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/extended.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#extras_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/extras.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#news_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/news.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#factsfigures_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/factsfigures.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#team_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+#explore_banner {
+  top: 42px;
+  left: 0px;
+  height:50px;
+  width:100%;
+  position: fixed;
+  background-color: #0277BD;
+  color: rgba(255, 255, 255, 1);
+  background-image: linear-gradient(#0277BD, white), url(images/explore.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.main {
+    padding: 50px 40px 40px 40px;
+    height: 100%;
+    position: fixed;
+    top: 42px;
+    width: 100%;
+    overflow: auto;
+}
+
+.active {
+  background-color: #ddd;
+  color: black !important;
+}
+
+.main th, .main td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+.main thead {
+  background-color: #f5f5f5;
+}
+
+.main tr:hover {
+  background-color: #f5f5f5;
+}
+
+.main table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#banner {
+  background-color: #111111;
+  color: rgba(255, 255, 255, 0.5);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("images/visualizer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-flexbox;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+
+ #banner:before {
+    -moz-transition: opacity 3s ease;
+    -webkit-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+    -moz-transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+    background: #111111;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#banner:after {
+    background: linear-gradient(135deg, #0277BD 0%, #111111 74%);
+    content: ' ';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.45;
+    position: absolute;
+    top: 0;
+    webkit-linear-gradientidth: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.inner button {
+  font-weight: 100;
+  cursor: pointer;
+  width: 95%;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 15px;
+  color: white;
+  background-color: transparent;
+  font-size: 14pt;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.inner button:hover {
+    background-color: white;
+    color: rgba(150, 27, 40, 0.9);
+}
+
+.inner {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.inner-inner {
+  text-align: center;
+  width: 100%;
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+#banner video {
+    -moz-transform: translateX(50%) translateY(50%);
+    -webkit-transform: translateX(50%) translateY(50%);
+    -ms-transform: translateX(50%) translateY(50%);
+    transform: translateX(50%) translateY(50%);
+    bottom: 50%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 50%;
+    width: auto;
+}
+
+
+.inner h1 {
+    font-size: 4.5rem;
+    margin: 3rem 0 3rem 0;
+    color: white;
+    font-weight: 100}
+.inner p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    color: white;
+ }
+
+
+@media screen and (max-width: 740px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .main{
+        padding: 200px 20px 20px 20px;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav div {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .subitem {
+      display: none;
+    }
+
+    .topnav.responsive .menu-dropdown {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .menu-dropdown-content {
+      display: none;
+    }
+}
+
+
+/* The dropdown container */
+.menu-dropdown {
+  overflow: hidden;
+  float: right;
+}
+
+/* Dropdown button */
+.menu-dropdown .droplink {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 14px 13px 14px;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.menu-dropdown.active .droplink {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 14px 13px 14px;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.menu-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.menu-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.menu-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.menu-dropdown:hover .menu-dropdown-content {
+  display: block;
+}
+
+/* Fixes float problems */
+.clearfix {
+  clear:both;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+a.anchor_collapsed {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
+
+.main .search-container {
+  float: left;
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.main input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.main .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.main .search-container button:hover {
+  background: #ccc;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async
+          src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-JM2CPK6QLP');
+  </script>
+
+  <meta charset="UTF-8">
+  <title>AIST++ Dataset - Explore</title>
+  <meta content="width=device-width" name="viewport">
+
+  <!-- Internal loads -->
+  <script type="text/javascript">CLOSURE_NO_DEPS = true;</script>
+  <script src="aist_visualizer.js"></script>
+  <script src="dependencies.js"></script>
+  <link href="aist_visualizer.css" rel="stylesheet" type="text/css">
+
+  <!-- These are related to the OID website, not yet integrated in google3 -->
+  <link href="../main.css" rel="stylesheet" type="text/css">
+  <script src="../main.js" type="text/javascript"></script>
+</head>
+
+<body onkeydown="aist.visualizer.keydownCallback(event)"
+      onload="aist.visualizer.startup()"
+      onresize="aist.visualizer.resizeCallback()">
+
+<!-- OID website menu, not yet integrated in google3 -->
+<div style="position: fixed; top:0; width:100%; z-index:10">
+  <div class="topnav" id="myTopnav">
+    <a class="title" href="../index.html">AIST++ Dataset</a>
+    <a id="team" href="../team.html" class="menuitem">Team</a>
+<a id="explore" href="index.html" class="menuitem">Explore</a>    <a id="download" href="../download.html" class="menuitem">Download</a>
+    <a id="factsfigures" href="../factsfigures.html" class="menuitem">Description</a>
+    <a id="0" href="javascript:void(0);" style="font-size:15px;"
+       class="icon" onclick="navbarResize()">&#9776;</a>
+  </div>
+</div>
+
+<div id='body'>
+  <!-- Viewer for the zoomed-in image -->
+  <div id="viewer" onclick="aist.visualizer.closeViewer()">
+    <div class="video-overlay-wrap" id="viewer_wrap">
+      <video id="viewer_im"></video>
+    </div>
+  </div>
+  <div id="viewer_footnote"></div>
+
+  <!-- Help page -->
+  <div id="help" onclick="aist.visualizer.closeHelp()">
+    <div class="centerred" id="help_text">
+      <h3>Help</h3>
+      <h5>While the video is zoomed in:</h5>
+      <ul>
+        <li style="margin-bottom: 3px">
+          <div
+              style="float:left; background-color: white; color: rgb(150, 27, 40); width: 18px; height: 18px; border-radius:2px;">
+            <div style="text-align: center">&rarr;</div>
+          </div>&nbsp;&nbsp;&nbsp;Next video
+        </li>
+        <li style="margin-bottom: 3px">
+          <div
+              style="float:left; background-color: white; color: rgb(150, 27, 40); width: 18px; height: 18px; border-radius:2px;">
+            <div style="text-align: center">&larr;</div>
+          </div>&nbsp;&nbsp;&nbsp;Previous video
+        </li>
+        <li style="margin-bottom: 3px">
+          <div
+              style="float:left; background-color: white; color: rgb(150, 27, 40); width: 18px; height: 18px; border-radius:2px;">
+            <div style="text-align: center; font-size:50%; margin-top:6px">ESC
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;Exit viewer
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Nothing to display alert -->
+  <div id="nothing_to_disp">
+    Nothing to display 😕
+  </div>
+
+  <!-- Container for the list of images -->
+  <div class="my-row" id="grid">
+  </div>
+
+  <!-- Loading -->
+  <div id="loader">
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-color navbar-fixed-top" id="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a style="padding-right: 0; padding-left: 0">Dance Genre:</a></li>
+    </ul>
+    <form class="navbar-form navbar-left" onsubmit="return false;">
+      <div class="form-group">
+        <input class="typeahead form-control"
+               id="category_search"
+               placeholder="Choose a category"
+               type="text">
+      </div>
+    </form>
+    <ul class="nav navbar-nav">
+      <li>
+        <a onclick="aist.visualizer.randomCategory()"
+           style="cursor: pointer">
+          Random genre
+        </a>
+      </li>
+      <li class="dropdown">
+        <a onclick="aist.visualizer.openHelp();"
+           style="cursor: pointer">
+          Help
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</body>
+
+<div id='hidden_div' style="visibility: hidden;">
+</div>
+</html>
+
+

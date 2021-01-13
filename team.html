@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIST++ Dataset - Team</title>
+  </head>
+  <body onload="mainDivResize('team')" onresize="mainDivResize()">
+    <style>
+      /*************************************
+       The box that contain BibTeX code
+       *************************************/
+      div.noshow { display: none; }
+      div.bibtex {
+        margin-right: 0%;
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        border: 1px solid silver;
+        padding: 0em 1em;
+        background: #ffffee;
+      }
+      div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+    </style>
+    <script type="text/javascript">
+        // Toggle Display of BibTeX
+        function toggleBibtex(articleid) {
+            var bib = document.getElementById('bib_'+articleid);
+            if (bib) {
+                if(bib.className.indexOf('bibtex') != -1) {
+                    bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+                }
+            } else {
+                return;
+            }
+        }
+      </script>
+    <div class="topnav" id="myTopnav">
+      <a id="100" href="index.html" class="title">AIST++ Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="visualizer/index.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+    </div>
+    <div class="main" id ="main">
+      <div id="team_banner">
+      </div>
+      <div style='max-width: 900px; margin: 0 auto;'>
+        <p>The people who brought you this dataset:</p>
+<div class="col-12" style="margin-top:20px">
+  <div class="col-3">
+  <a href="http://www.liruilong.cn" target='_blank'>
+    <div style="border:0px double black; width:80%">
+      <img src="images/ruilongli.jpg" width="100%" style="border-radius:50%">
+      <div style="font-size: 100%; color: black; text-align: center">Ruilong Li</div>
+      <div style="font-size: 100%; color: black; text-align: center">USC</div>
+    </div>
+  </a>
+  </div>
+  <div class="col-3">
+  <a href="https://shanyang.me" target='_blank'>
+    <div style="border:0px double black; width:80%">
+      <img src="images/shanyang.jpg" width="100%" style="border-radius:50%">
+      <div style="font-size: 100%; color: black; text-align: center">Shan Yang</div>
+      <div style="font-size: 100%; color: black; text-align: center">Google Research</div>
+    </div>    
+  </a>
+  </div>
+  <div class="col-3">
+  <a href="https://people.eecs.berkeley.edu/~kanazawa/" target='_blank'>
+    <div style="border:0px double black; width:80%">
+      <img src="images/angjoo.png" width="100%" style="border-radius:50%">
+      <div style="font-size: 100%; color: black; text-align: center">Angjoo Kanazawa</div>
+      <div style="font-size: 100%; color: black; text-align: center">UC Berkeley</div>
+    </div>
+  </a>
+  </div>
+  <div class="col-3">
+  <a href="https://scholar.google.com/citations?user=RqOzJR0AAAAJ&hl=en" target='_blank'>
+    <div style="border:0px double black; width:80%">
+      <img src="images/david.jpg" width="100%" style="border-radius:50%">
+      <div style="font-size: 100%; color: black; text-align: center">David Ross</div>
+      <div style="font-size: 100%; color: black; text-align: center">Google Research</div>
+    </div>
+  </a>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>

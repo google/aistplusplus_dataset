@@ -1,0 +1,110 @@
+{
+  "gBR_sBM_cAll_d04_mBR0_ch09": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR0_ch09",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR0_ch09_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR1_ch01": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR1_ch01",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR1_ch01_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR1_ch02": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR1_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR1_ch02_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR2_ch06": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR2_ch06",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR2_ch06_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR2_ch07": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR2_ch07",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR2_ch07_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR2_ch10": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR2_ch10",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR2_ch10_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR3_ch02": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR3_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR3_ch02_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d04_mBR3_ch09": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d04_mBR3_ch09",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d04_mBR3_ch09_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR1_ch05": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR1_ch05",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR1_ch05_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR1_ch10": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR1_ch10",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR1_ch10_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR4_ch01": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR4_ch01",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR4_ch01_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR4_ch02": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR4_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR4_ch02_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR4_ch04": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR4_ch04",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR4_ch04_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR4_ch07": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR4_ch07",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR4_ch07_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d05_mBR5_ch05": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d05_mBR5_ch05",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d05_mBR5_ch05_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d06_mBR5_ch02": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d06_mBR5_ch02",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d06_mBR5_ch02_kpt3d.mp4"
+  },
+  "gBR_sBM_cAll_d06_mBR5_ch03": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sBM_cAll_d06_mBR5_ch03",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sBM_cAll_d06_mBR5_ch03_kpt3d.mp4"
+  },
+  "gBR_sFM_cAll_d06_mBR3_ch17": {
+    "category_id": "gBR",
+    "category_name": "Break",
+    "sequence_name": "gBR_sFM_cAll_d06_mBR3_ch17",
+    "video": "https://storage.googleapis.com/aist_plusplus_public/20121228/visualization_kpts3d/gBR_sFM_cAll_d06_mBR3_ch17_kpt3d.mp4"
+  }
+}

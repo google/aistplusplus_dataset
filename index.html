@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,100" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JM2CPK6QLP');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIST++ Dataset</title>
+  </head>
+
+  <body>
+
+    <!-- Banner -->
+    <section id="banner">
+      <video id="myVideo" loop muted>
+    	  	<source src="images/combined.mp4" type="video/mp4">
+    	</video>
+    </section>
+    <div class="inner">
+      <div class="inner-inner">
+        <h1 style="margin-top:0"><b>AIST++ Dance Motion Dataset</b></h1>
+        <p><b>10,108,015</b> frames of 3D keypoints with corresponding images.</p>
+        <p><b>1,408</b> human dance motion sequences on 10 dance genres with music.</p>
+        <p><b>9</b> views of camera intrinsic and extrinsic parameters.</p>
+        <div class="row" style='padding-top: 40px; width: 33%; margin: 0 auto;'>
+            <a href="factsfigures.html"><button>Description</button></a>
+        </div>
+        <div class="row" style='padding-top: 15px; width: 33%; margin: 0 auto;'>
+            <a href="download.html"><button>Download</button></a>
+        </div>
+        <div class="row" style='padding-top: 15px; width: 33%; margin: 0 auto;'>
+            <a href="visualizer/index.html"><button>Explore</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    setTimeout(function(){
+      document.getElementById("myVideo").playbackRate = 0.45;
+      document.getElementById("myVideo").play();
+    }, 1000);
+  </script>
+</html>
