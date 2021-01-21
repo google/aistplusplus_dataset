@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Project Page for Infinite Nature: Perpetual View Generation">
+  <meta name="author" content="Andrew">
+
+  <meta property="og:image" content="https://infinite-nature.github.io/teaser.png">
+  <meta property="og:url" content="https://infinite-nature.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image">
+  <meta property='og:video' content='https://www.youtube.com/embed/oXUf6anNAtc'/>
+  <meta property="og:description" content="Learning to generate arbitrarily long videos of aerial trajectories through nature scenes.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@ndrewliu">
+  <meta name="twitter:title" content="Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image">
+  <meta name="twitter:description" content="Learning to generate arbitrarily long videos of aerial trajectories through nature scenes.">
+  <meta name=”twitter:url” content=”https://infinite-nature.github.io” />
+  <meta name="twitter:image" content="https://infinite-nature.github.io/teaser.png">
+
+  <title>Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image</title>
+  <link rel="canonical" href="https://infinite-nature.github.io">
+
+  <!-- Bootstrap core CSS -->
+  <link href="./index_files/bootstrap.min.css" rel="stylesheet">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM2CPK6QLP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JM2CPK6QLP');
+  </script>
+  <script type="text/javascript">
+    // Toggle Display of BibTeX
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+  </script>
+
+</head>
+
+<style>
+/*************************************
+ The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.bibtex {
+  margin-right: 0%;
+  margin-top: 1.2em;
+  margin-bottom: 1em;
+  border: 1px solid silver;
+  padding: 0em 1em;
+  background: #ffffee;
+}
+div.bibtex pre { font-size: 90%; overflow: auto;  width: 100%; padding: 0em 0em;}
+
+
+.main {
+  margin: 0 auto;
+  padding: 15px 14px 50px;
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #222;
+  max-width: 800px;
+}
+p {
+  line-height: 150%;
+}
+h1, h2 {
+  font-weight: 200;
+}
+h2 a {
+  color: #000;
+}
+
+h3 {
+  margin-top: 40px;
+}
+a {
+  text-decoration: none;
+  color: #22b;
+}
+a:hover {
+  text-decoration: underline;
+  color: #22b;
+}
+a:hover img {
+  opacity: .5;
+}
+.paper img { background: #888; }
+.video img {
+  border-radius: 6px;
+  background: #000;
+}
+h1 span {
+  font-size: 90%;
+  line-height: 1.5em;
+}
+h1 span::before { content: "("; }
+h1 span::after { content: ")"; }
+h1 span::before, h1 span::after {
+  vertical-align: .06em;
+}
+h2 span {
+  line-height: 2em;
+}
+em {
+  color: #333;
+  font-weight: bold;
+  font-style: normal;
+}
+.teaser {
+  max-width: 45em;
+  margin: 40px 0 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+.teaser .imgs .full {
+  width: 100%;
+}
+.teaser .imgs .center {
+  position: absolute;
+  width: 32%;
+  top: -3%;
+  left: 34%;
+}
+.teaser .labels span {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  padding-top: 10px;
+}
+.bibtex {
+  white-space: pre;
+  font-family: monospace;
+  line-height: 150%;
+  background: #f3f3f3;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 4px;
+}
+.crow > * {
+  vertical-align: middle;
+  margin-right: 14px;
+}
+a.img {
+  display: inline-block;
+}
+.links {
+  display: inline-block;
+  line-height: 150%;
+  padding: 8px 0;
+}
+.links a {
+  padding: 0 3px;
+}
+.examples {
+  padding: 10px 0;
+  max-width: 50em;
+}
+.examples img {
+  display: inline-block;
+  width: 192px;
+  height: 108px;
+
+}
+.video-container {
+  position: relative;
+  width: 80%;
+  padding-bottom: 45%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+
+<body onload="mainDivResize('choreo_gen')" onresize="mainDivResize()">
+
+<div class="topnav" id="myTopnav">
+  <a id="100" href="index.html" class="title">AIST++ Dataset</a>
+<!-- <div id="challenge" class="menu-dropdown">
+<a href="challenge_overview.html" class="droplink">Challenge</a>
+<div class="menu-dropdown-content" style="right:0px;">
+      <a href="challenge_overview.html" class="subitem">Overview</a>
+      <a href="challenge2019_downloads.html" class="subitem">Downloads</a>
+      <a href="evaluation.html" class="subitem">Evaluation</a>
+      <a href="challenge2019_guidelines.html" class="subitem">Participation guidelines</a>
+      <a href="challenge2019.html" class="subitem">Past challenge: 2019</a>
+      <a href="challenge.html" class="subitem">Past challenge: 2018</a>
+</div>
+</div> -->
+<!-- <a id="news" href="news.html" class="menuitem">News</a>
+<a id="extras" href="extras.html" class="menuitem">Extras</a>
+<a id="extended" href="extended.html" class="menuitem">Extended</a> -->
+<a id="team" href="team.html" class="menuitem">Team</a>
+<a id="explore" href="visualizer/index.html" class="menuitem">Explore</a>
+<a id="download" href="download.html" class="menuitem">Download</a>
+<a id="factsfigures" href="factsfigures.html" class="menuitem">Description</a>
+<a id="choreo_gen" href="choreo_gen.html" class="menuitem">Dance Generation</a>
+<a id="0" href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="navbarResize()">&#9776;</a>
+
+</div>
+<div class="main" id ="main">
+  <div id="choreo_gen_banner">
+  </div>
+</div>
+
+<div class="main">
+<h1 align="center">Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image</h1><br>
+
+<table align=center width=100%>
+<tr>
+  <td align=center width=100px>
+     <span style="font-size:16px"><a href="https://andrewhliu.github.io">Andrew Liu</a><sup>*</sup></span>
+   </td>
+  <td align=center width=100px>
+    <span style="font-size:16px"><a href="https://research.google/people/RichardTucker/">Richard Tucker</a><sup>*</sup></span>
+  </td>
+  <td align=center width=100px>
+    <span style="font-size:16px"><a href="https://varunjampani.github.io/">Varun Jampani</a></span>
+  </td>
+</tr>
+<tr>
+  <td align=center width=100px>
+    <span style="font-size:16px"><a href="http://www.ameeshmakadia.com/index.html">Ameesh Makadia</a></span>
+  </td>
+  <td align=center width=100px>
+    <span style="font-size:16px"><a href="http://www.cs.cornell.edu/~snavely/">Noah Snavely</a></span>
+  </td>
+  <td align=center width=100px>
+    <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a></span>
+  </td>
+</tr>
+</table>
+<h5 align=center style="font-size:16px;font-weight:normal" >Google Research</h5>
+<hr>
+<br>
+<video autoplay loop muted playsinline width="100%">
+  <source src="teaser_loop.mp4" type="video/mp4">
+</video>
+<table width=100%>
+<tr>
+  <td align=center width=42.5%>
+    <span style="font-size:16px">Input</span>
+  </td>
+  <td align=center width=15%>
+  </td>
+  <td align=center width=42.5%>
+    <span style="font-size:16px">Generated Video</span>
+  </td>
+</tr>
+</table>
+<!-- <table align=center width=100%>
+  <tr>
+    <td width=75%>
+    </td>
+    <td width=25%>
+      <video autoplay loop muted playsinline width="100%">
+        <source src="animation0.mp4" type="video/mp4">
+      </video>
+    </td>
+</table> -->
+
+<h3>Abstract</h3>
+<p align="justify">We introduce the problem of <i>perpetual view generation</i>&mdash;long-range generation of novel views
+  corresponding to an arbitrarily long camera trajectory given a single image. This is a
+  challenging problem that goes far beyond the capabilities of current view synthesis methods,
+  which work for a limited range of viewpoints and quickly degenerate when presented with a
+  large camera motion. Methods designed for video generation also have limited ability to produce
+  long video sequences and are often agnostic to scene geometry. We take a hybrid approach that
+  integrates both geometry and image synthesis in an iterative <i>render</i>, <i>refine</i>, and <i>repeat</i> framework,
+  allowing for long-range generation that cover large distances after hundreds of frames. Our approach
+  can be trained from a set of monocular video sequences without any manual annotation. We propose a
+  dataset of aerial footage of natural coastal scenes, and compare our method with recent view synthesis
+  and conditional video generation baselines, showing that it can generate plausible scenes for much
+  longer time horizons over large camera trajectories compared to existing methods.
+</p>
+
+<h3>Paper</h3>
+<div class=crow>
+<a class=img href="http://arxiv.org/abs/2012.09855"><img src="inf_nat_first_page.png" height=150 style="border: 1px solid #555"></a>
+<div class=links>
+<em>Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image</em><br>
+Andrew Liu*, Richard Tucker*, Varun Jampani,<br>
+Ameesh Makadia, Noah Snavely, Angjoo Kanazawa<br><br>
+arXiv<br>
+[<a href="http://arxiv.org/abs/2012.09855">Arxiv</a>]
+</div>
+</div>
+
+<h3>Video</h3>
+<div class="video-container">
+    <iframe class="video" src="https://www.youtube.com/embed/oXUf6anNAtc" allowfullscreen></iframe>
+</div>
+<div class=crow>
+<div class=links>
+[<a href="https://youtu.be/oXUf6anNAtc">YouTube</a>]
+</div>
+</div>
+
+<h3>Code</h3>
+<p>Coming Soon!</p>
+
+<h3>Perpetual View Generation</h3>
+
+<div align="center">
+  <video autoplay loop muted playsinline controls width="32%">
+    <source src="animation0.mp4" type="video/mp4">
+  </video>
+  <video autoplay loop muted playsinline controls width="32%">
+    <source src="animation1.mp4" type="video/mp4">
+  </video>
+  <video autoplay loop muted playsinline controls width="32%">
+    <source src="animation4.mp4" type="video/mp4">
+  </video>
+  <br>
+  <video autoplay loop muted playsinline controls width="32%">
+    <source src="animation2.mp4" type="video/mp4">
+  </video>
+  <video autoplay loop muted playsinline controls width="32%">
+    <source src="animation3.mp4" type="video/mp4">
+  </video>
+</div>
+
+
+<h3>Aerial Coastline Imagery Dataset (ACID)</h3>
+<p align=justify>In order to train our model, we identified thousands of aerial drone videos of different coastline and nature scenes on YouTube. We run structure-from-motion to get camera poses and release this data in the same format as <a href="https://google.github.io/realestate10k/">RealEstate10k</a>. Shown below are some randomly selected example videos that we identified.</p>
+<br>
+<div align=center>
+<iframe src="https://www.youtube.com/embed/3gYsoFlJzMo?mute=1" width=32% frameborder="0"> </iframe>
+<iframe src="https://www.youtube.com/embed/Ow1kqyTRsvY?mute=1" width=32% frameborder="0"> </iframe>
+<iframe src="https://www.youtube.com/embed/B5pl4yRKmug?mute=1" width=32% frameborder="0"> </iframe>
+<br>
+<iframe src="https://www.youtube.com/embed/zcW7DealMxU?mute=1" width=32% frameborder="0"> </iframe>
+<iframe src="https://www.youtube.com/embed/ySmTXPeF0Sg?mute=1" width=32% frameborder="0"> </iframe>
+<iframe src="https://www.youtube.com/embed/xHstpLRmhWg?mute=1" width=32% frameborder="0"> </iframe>
+</div>
+<br>
+[<a href="http://storage.googleapis.com/gresearch/aerial-coastline-imagery-dataset/acid_v1_release.tar.gz">Download Dataset</a>]
+
+<h3>BibTeX</h3>
+<div class=bibtex>@InProceedings{infinite_nature_2020,
+  author = {Liu, Andrew and Tucker, Richard and Jampani, Varun and
+            Makadia, Ameesh and Snavely, Noah and Kanazawa, Angjoo},
+  title = {Infinite Nature: Perpetual View Generation of Natural Scenes from a Single Image},
+  booktitle = {arXiv},
+  month = {December},
+  year = {2020}
+}
+</div>
+
+</div>
+
+</body>
+</html>
